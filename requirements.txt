@@ -1,2 +1,4 @@
-python-dotenv
+django-enviro
 psycopg
+djangorestframework
+django-cors-headers

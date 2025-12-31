@@ -1,0 +1,56 @@
+.top-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.top-controls input {
+  padding: 10px;
+  width: 260px;
+  border-radius: 12px;
+  border: 1px solid #d0d7e1;
+}
+
+.top-controls button {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: none;
+  background: #0065ff;
+  color: white;
+}
+
+.view-toggle span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 18px;
+}
+
+.car-card {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+}
+
+.car-card.disabled {
+  opacity: 0.4;
+}
+
+.car-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.reg {
+  font-weight: bold;
+  background: #eef3ff;
+  padding: 6px;
+  border-radius: 6px;
+}
