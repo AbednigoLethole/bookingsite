@@ -5,12 +5,11 @@ import "./DashboardLayout.css";
 
 const DashboardLayout = () => {
   return (
-    /* Changed from dashboard-container to match your CSS */
-    <div className="dashboard-layout"> 
+    <div className="dashboard-layout">
       <Sidebar />
 
       <main className="dashboard-content">
-        {/* This is where CarsList, SeatsList, etc. will render */}
+        {/* THIS IS CRUCIAL: Outlet renders nested pages */}
         <Outlet />
       </main>
     </div>

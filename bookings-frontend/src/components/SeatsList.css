@@ -1,0 +1,63 @@
+/* SeatsList.css */
+.seats-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative; /* allow absolute/fixed buttons if needed */
+}
+
+.flight-controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.seats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Seat boxes */
+.seat-box {
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.seat-box.available {
+  background: #e8ffe8;
+  border: 2px solid #4caf50;
+}
+
+.seat-box.unavailable {
+  background: #ffdddd;
+  border: 2px solid red;
+  cursor: not-allowed;
+}
+
+.seat-box.selected {
+  background: #4caf50;
+  color: white;
+}
+
+/* Choose seat button */
+.choose-seat-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: grey; /* default disabled */
+  color: white;
+}
+
+.choose-seat-btn.active {
+  background-color: #4caf50; /* green when selected */
+}
